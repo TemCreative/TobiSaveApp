@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savings Group</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Savings Group App</h1>
+    
+    <!-- Registration Form -->
+    <section id="registration">
+      <h2>Register a Member</h2>
+      <form id="registrationForm">
+        <input type="text" id="studentName" placeholder="Enter Student Name" required />
+        <select id="tierSelect" required>
+          <option value="">Select Tier</option>
+          <option value="1">Tier 1 - 10,000 Naira</option>
+          <option value="2">Tier 2 - 20,000 Naira</option>
+          <option value="3">Tier 3 - 30,000 Naira</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <!-- Savings Dashboard -->
+    <section id="dashboard">
+      <h2>Savings Dashboard</h2>
+      <p>Total Savings: <span id="totalSavings">0</span> Naira</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Tier</th>
+            <th>Contribution</th>
+            <th>Weekly Interest</th>
+            <th>Total Withdrawable</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="memberList">
+          <!-- Populated dynamically -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
